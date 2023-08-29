@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "fuenteGeneral";
+  src: url("/fonts/roboto.ttf");
+}
+
+html {
+  font-family: "fuenteGeneral";
+}
+
+body {
+  background: azure;
+}
+
+.container {
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+
+.enlaces {
+  background: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.logo {
+  display: inline-block;
+  width: 10%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.titulo {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.titulo:hover {
+  color: chartreuse;
+}
+
+.menu {
+  background: black;
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+}
+
+.menu-items {
+  margin-right: 30px;
+}
+
+.menu-items:last-child{
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: azure;
+}
+
+.menu a:hover {
+  color: chartreuse;
+}
+
+.main {
+  background: azure;
+  height: 100vh;
+}
+
+.tituloPrincipal {
+  text-align: center;
+}
+
+/* Tamaño Mobile */
+@media screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+  }
+
+  .enlaces {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 13%;
+  }
+
+  .menu {
+    margin: 0 auto;
+  }
+
+  .menu-items {
+    margin-right: 8px;
+    padding:10px ;
+  }
+}
